@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Examen 3</title>
+    <link rel="stylesheet" href="utilitaires\bootstrap-5.2.0-beta1-dist\css\bootstrap.min.css">
+    <script src="utilitaires/jquery-3.6.0.min.js"></script>
+    <script src="utilitaires/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/produits.js"></script>
+    <script src="js/fonctions.js"></script>
+
+</head>
+<body class="bgindex" onLoad="ChargerSelect();">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a  class="navbar-brand" href=""><img src="images/logo.jpg" alt="" class="imglogo"></a>
+        <button class="w-10 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" oncLick="clickProduits();" >Lister Produit</button>
+        <div>
+            <label for="selProduits">Produits</label>
+            <select name="selProduits" id="selProduits" onChange="changerProduit();"></select>
+            <label for="selClients">Clients</label>
+            <select name="selClients" id="selClients"  onChange="changerClient();"></select>
+            <label for="selTotal">Total</label>
+            <select name="selTotal" id="selTotal"  onChange="changerTotal();">
+                <option value="Tous">Tous</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+    </nav>
+    <br>
+    <div id="contenu"></div>
+    
+</body>
+</html>
