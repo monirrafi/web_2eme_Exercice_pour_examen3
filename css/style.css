@@ -37,6 +37,7 @@ select {
     height: 64px;
    /* opacity: .6;*/
 }
+
 .bgachats {
     background-image: url("../images/comande2.jpg");
 }
@@ -45,9 +46,10 @@ select {
     float : right;
 }
 .imglogo{
-    max-width: 64px;
-    max-width: 64px;
-    opacity: 1;
+    max-width: 30px;
+    max-width: 30px;
+   /* opacity: 1;*/
+   margin-right: 20%;
 }
 
 .srch {
@@ -110,11 +112,31 @@ select {
     width: 21rem !important;
     max-height:500px !important;
 }
-table{
-    width: 70% !important;
-    margin-left: 200px;
-}
-.bgtable{
-    background-color: blue !important;
+table {
+    margin-left: 15%;
+    border-collapse: collapse;
+    width: 70%;
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid black;
+  }
+  
+  tr{
+    background-color: #f2f2f2;
+    }
+  .tdcenter{
+    text-align:center;
 
-}
+  }
+  
+  th {
+    background-color:blue;
+    color: yellow;
+  }
+  caption{
+    font-size: 22px;
+    font-weight: bold;
+  }
